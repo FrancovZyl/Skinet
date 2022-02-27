@@ -38,10 +38,10 @@
 
                 <form class="form-inline">
                     <div class="input-group mt-2">
-                        <input (keyup.enter)="onSearch()" class="form-control me-2" #search style="width: 300px; height: 38px; margin-top: 8px;"
+                        <input  class="form-control me-2" (keydown.enter.prevent)="onSearch()" #search style="width: 300px; height: 38px; margin-top: 8px;"
                             placeholder="Search" type="text">
-                        <button (click)="onSearch()" class="btn btn-outline-primary my-2">Search</button>
-                        <button (click)="onReset()" class="btn btn-outline-success ms-2 my-2">Reset</button>
+                        <button type="button" (click)="onSearch()" class="btn btn-outline-primary my-2">Search</button>
+                        <button type="button" (click)="onReset()" class="btn btn-outline-success ms-2 my-2">Reset</button>
                     </div>
                 </form>
             </div>
