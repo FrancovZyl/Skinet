@@ -17,12 +17,12 @@ export interface IOrderItem {
 export interface IOrder {
     id: number;
     buyerEmail: string;
-    orderDate: Date;
+    orderDate: string;
     shipToAddress: IAddress;
     deliveryMethod: string;
     shippingPrice: number;
     orderItems: IOrderItem[];
     subtotal: number;
-    total: number;
     status: string;
+    total: number;
 }

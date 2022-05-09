@@ -24,7 +24,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            
+            services.AddSingleton<IConfiguration>(_config);
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddDbContext<StoreContext>(x => 
